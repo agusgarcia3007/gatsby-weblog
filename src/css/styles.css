@@ -1,0 +1,149 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.container {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.main {
+    justify-content:center;
+    align-items:flex-start;
+    margin:0 auto 4rem auto;
+    width:100%;
+    max-width: 1080px;
+}
+
+.sticky-nav {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;
+    width:100%;
+    padding:1rem;
+    position:sticky;
+    z-index:10;
+    top:0;
+    backdrop-filter: saturate(180%) blur(20px);
+    transition:background-color 0.1 ease-in-out;
+}
+
+.sticky-nav-button {
+    color:black;
+    background:transparent;;
+    border:1px solid transparent;
+    border-radius:5%;
+    padding: 0.5rem;
+    margin-right:1rem;
+    text-align: center;
+    display:inline-block;
+    text-decoration:none;
+}
+
+.sticky-nav-button:hover,
+.sticky-nav-button:active {
+    color:black;
+    background: #efefef;
+}
+
+.card {
+    padding: 2rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns:auto 1fr ;
+    grid-gap: 20px;
+    margin-top:2rem;
+    text-decoration:none;
+    transition: transform 350ms;
+}
+
+.card:hover {
+    cursor:pointer;
+    text-decoration:none;
+    border-left: 2px solid #60a1e7;
+    transform: translateX(-2px);
+    border-bottom: 2px solid #60a1e7;
+}
+
+.card:first-of-type {
+    margin-top:4rem;
+}
+
+.card-title,
+.card-title > a,
+.card-link,
+.card-link > a {
+    margin:0;
+    font-weight: 600;
+    font-size:2rem;
+    text-decoration:none;
+    color:black;
+}
+
+.card-date {
+    margin:1rem;
+    font-size:1rem;
+}
+
+.card-description {
+    margin-top:1rem;
+    color:#707070;
+    font-size: 1.2rem;
+}
+
+.post-heading {
+    text-align: center;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    font-size:3rem;
+}
+
+.post-date {
+    text-align:center;
+    font-size:1rem;
+    margin-bottom:4rem;
+}
+
+.post-body {
+    margin: 0 auto 4rem auto;
+}
+
+.post-body h1, 
+.post-body h2, 
+.post-body h3, 
+.post-body h4,
+.post-body ol, 
+.post-body ul,
+.post-body p {
+    margin-top:1rem;
+    margin-bottom:2rem;
+}
+
+.post-body h2 {
+    font-size: 2rem;
+}
+
+.post-body ol,
+.post-body ul {
+    margin-left:2rem;
+}
+
+.previous-next-button {
+    font-size: 1.25rem;
+    color:#000;
+    background: #efefef;
+    border:1px solid #efefef;
+    border-radius:5%;
+    padding:1rem;
+    margin-right: 1rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration:none;
+    min-width:25%;
+}
