@@ -1,4 +1,6 @@
 import React from "react";
+import { AiFillGithub } from "react-icons/ai";
+import { IconContext } from "react-icons";
 
 const Header = () => {
   return (
@@ -7,15 +9,17 @@ const Header = () => {
         Home
       </a>
       <div className="sticky-nav-stack">
-        <a href="/" className="sticky-nav-button">
-          Blog
-        </a>
-        <a href="/" className="sticky-nav-button">
+        <a href="mailto:agusgarcia3007@gmail.com" className="sticky-nav-button">
           Contact
         </a>
-        <a href="/" className="sticky-nav-button">
-          About
-        </a>
+        <IconContext.Provider value={{ style: { verticalAlign: "middle" } }}>
+          <a
+            href="https://github.com/agusgarcia3007"
+            className="sticky-nav-button"
+          >
+            <AiFillGithub />
+          </a>
+        </IconContext.Provider>
       </div>
     </div>
   );
